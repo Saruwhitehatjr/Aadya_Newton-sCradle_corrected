@@ -25,7 +25,7 @@ function setup() {
 
  bobDiameter=40;
  startBobPositionX=width/2;
- startBobPositionY=height/4+500;
+ startBobPositionY=height/4+200;
 
  bob1=new Bob(startBobPositionX-bobDiameter*2,startBobPositionY,bobDiameter);
  bob2=new Bob(startBobPositionX-bobDiameter,startBobPositionY,bobDiameter);
@@ -33,7 +33,7 @@ function setup() {
  bob4=new Bob(startBobPositionX+bobDiameter,startBobPositionY,bobDiameter);
  bob5=new Bob(startBobPositionX+bobDiameter*2,startBobPositionY,bobDiameter);
 
- roof=new Roof(width/2,height/4,width/7,20);
+ roof=new Roof(width/2,height/4,width/4,20);
 
  /*rope1=new Rope(bob1.body,roof.body)
  rope2=new Rope(bob2.body,roof.body)
@@ -54,7 +54,7 @@ Engine.run(engine);
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background(255);
   
   bob1.display()
   bob2.display()
