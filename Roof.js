@@ -11,7 +11,7 @@ class Roof
  this.w=w
  this.h=h
 
- this.body=Bodies.circle(this.x, this.y, (this.r)/2, options)
+ this.body=Bodies.rectangle(this.x, this.y, options)
  World.add(world, this.body);
  }
  display()
