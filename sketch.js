@@ -5,7 +5,7 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
 var bob1, bob2, bob3, bob4, bob5
-var roofObject
+var roof
 var rope1, rope2, rope3, rope4, rope5
 
 function preload()
@@ -32,7 +32,7 @@ function setup() {
  bob4=new Bob(startBobPositionX+bobDiameter,startBobPositionY,bobDiameter);
  bob5=new Bob(startBobPositionX+bobDiameter*2,startBobPositionY,bobDiameter);
 
- roofObject=new Roof(width/2,height/4,width/7,20);
+ roof=new Roof(width/2,height/4,width/7,20);
 
  /*rope1=new Rope(bob1.body,roof.body)
  rope2=new Rope(bob2.body,roof.body)
@@ -67,7 +67,7 @@ function draw() {
   rope4.display()
   rope5.display()
 
-  roofObject.display()
+  roof.display()
 
   drawSprites();
  
